@@ -1,0 +1,26 @@
+export default {
+  content: ["index.html", "assets/**/*.js"],
+  css: ["assets/bootstrap/bootstrap.css"],
+  safelist: {
+    standard: [
+      "gallery",
+      "gallery-items-row",
+      "row",
+      "item-column",
+      "mb-4",
+      "col-12",
+      "col-sm-6",
+      "col-md-4",
+      "col-lg-4",
+      "col-xl-4",
+      "gallery-item",
+      "img-fluid",
+      "modal",
+      "fade",
+      "modal-dialog",
+      "modal-content",
+      "modal-body",
+    ],
+  },
+  output: "assets/bootstrap/clean-bootstrap.css",
+};
