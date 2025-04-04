@@ -1375,3 +1375,25 @@ textarea {
 .visible {
   visibility: visible !important;
 }
+
+/* XXXXX mon ajout : Optimisation LCP : affichage immédiat de la première image */
+.carousel-inner {
+  display: block !important;
+  min-height: 881px;
+}
+
+.carousel-item {
+  opacity: 0;
+  transition: none !important;
+}
+
+.carousel-item:first-child {
+  display: block !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 1;
+  transform: none !important;
+}
+
+/* 
+Fin de mon ajout */
